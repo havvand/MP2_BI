@@ -67,15 +67,15 @@ wine_counts.plot(kind='bar', color=['red', 'black'], alpha=0.7)
 plt.ylabel('Count')
 plt.show()
 
-#%% which type of wine has higher average quality?
+#%% which type of wine has higher average quality? White wine has a higher average quality
 plt_average_quality = sns.boxplot(x='red_wine', y='quality', hue='red_wine', data=wine_data_copy, showmeans=True)
 plt.show()
 
-#%% which type of wine has higher average level of alcohol?
+#%% which type of wine has higher average level of alcohol? Red wine has a higher average level of alcohol
 plt_average_alc_level = sns.boxplot(x='red_wine', y='alcohol', hue='red_wine', data=wine_data_copy, color='beige', showmeans=True)
 plt.show()
 
-#%% which one has higher average quantity of residual sugar?
+#%% which one has higher average quantity of residual sugar? White wine.
 plt_average_residual_sugar_level = sns.boxplot(x='red_wine', y='residual sugar', hue='red_wine', data=wine_data_copy, color='beige', showmeans=True)
 plt.show()
 #%% Bin the attribute pH in 5 subsets and find subset with the highest density
